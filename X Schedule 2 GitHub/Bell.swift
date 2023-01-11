@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import iCalKit
 
 enum BellNames
 {
@@ -40,8 +41,8 @@ struct Bell: Identifiable, Hashable {
 var unparsedDay = "BEGIN:VEVENT UID:8821976@www.stxavier.org DTSTAMP:20221129T164803Z DTSTART:20211130T080000 DTEND:20211130T150500 SUMMARY:G Day DESCRIPTION:G-H-A-HR-Flex-B-C-D\n\n\nG 8:00-8:55\n  H 9:00-9:55\n  A 10:00-10:55\n  HR 11:00-11:10\n  Flex 11:10-12:10\n  B 12:10-1:05\n  C 1:10-2:05\n  D 2:10-3:05\n PRIORITY:0 END:VEVENT"
 
 func bellParse(unparsed: String) -> Day {
-    let index = unparsed.firstIndex(of: "")
-    
+    let dayTypeIndexStart = unparsed.firstIndex(of: "SUMMARY:")
+    let dayTypeIndexEnd = unparsed.firstIndex(of: "DESCRIPTION:")
     return
 }
 

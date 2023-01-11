@@ -34,6 +34,55 @@
 			remoteGlobalIDString = 4F972D2C296F0A86003A0703;
 			remoteInfo = "X Schedule 2 GitHub";
 		};
+		4F972D6B296F13C6003A0703 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F972D61296F13C6003A0703 /* iCalKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52D6D97C1BEFF229002C0205;
+			remoteInfo = "iCalKit-iOS";
+		};
+		4F972D6D296F13C6003A0703 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F972D61296F13C6003A0703 /* iCalKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52D6DA0F1BF000BD002C0205;
+			remoteInfo = "iCalKit-macOS";
+		};
+		4F972D6F296F13C6003A0703 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F972D61296F13C6003A0703 /* iCalKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52D6D9E21BEFFF6E002C0205;
+			remoteInfo = "iCalKit-watchOS";
+		};
+		4F972D71296F13C6003A0703 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F972D61296F13C6003A0703 /* iCalKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52D6D9F01BEFFFBE002C0205;
+			remoteInfo = "iCalKit-tvOS";
+		};
+		4F972D73296F13C6003A0703 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F972D61296F13C6003A0703 /* iCalKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52D6D9861BEFF229002C0205;
+			remoteInfo = "iCalKit-iOS Tests";
+		};
+		4F972D75296F13C6003A0703 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F972D61296F13C6003A0703 /* iCalKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DD75027A1C68FCFC006590AF;
+			remoteInfo = "iCalKit-macOS Tests";
+		};
+		4F972D77296F13C6003A0703 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F972D61296F13C6003A0703 /* iCalKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DD75028D1C690C7A006590AF;
+			remoteInfo = "iCalKit-tvOS Tests";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +100,7 @@
 		4F972D5B296F0BA3003A0703 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		4F972D5D296F0BF8003A0703 /* Bell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bell.swift; sourceTree = "<group>"; };
 		4F972D5F296F0C1A003A0703 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		4F972D61296F13C6003A0703 /* iCalKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iCalKit.xcodeproj; path = "../../iCalKit-master/iCalKit.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,10 +182,25 @@
 		4F972D4B296F0A8A003A0703 /* X Schedule 2 GitHubUITests */ = {
 			isa = PBXGroup;
 			children = (
+				4F972D61296F13C6003A0703 /* iCalKit.xcodeproj */,
 				4F972D4C296F0A8A003A0703 /* X_Schedule_2_GitHubUITests.swift */,
 				4F972D4E296F0A8A003A0703 /* X_Schedule_2_GitHubUITestsLaunchTests.swift */,
 			);
 			path = "X Schedule 2 GitHubUITests";
+			sourceTree = "<group>";
+		};
+		4F972D62296F13C6003A0703 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F972D6C296F13C6003A0703 /* iCalKit.framework */,
+				4F972D6E296F13C6003A0703 /* iCalKit.framework */,
+				4F972D70296F13C6003A0703 /* iCalKit.framework */,
+				4F972D72296F13C6003A0703 /* iCalKit.framework */,
+				4F972D74296F13C6003A0703 /* iCalKit-iOS Tests.xctest */,
+				4F972D76296F13C6003A0703 /* iCalKit-macOS Tests.xctest */,
+				4F972D78296F13C6003A0703 /* iCalKit-tvOS Tests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +293,12 @@
 			mainGroup = 4F972D24296F0A86003A0703;
 			productRefGroup = 4F972D2E296F0A86003A0703 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4F972D62296F13C6003A0703 /* Products */;
+					ProjectRef = 4F972D61296F13C6003A0703 /* iCalKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4F972D2C296F0A86003A0703 /* X Schedule 2 GitHub */,
@@ -236,6 +307,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4F972D6C296F13C6003A0703 /* iCalKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = iCalKit.framework;
+			remoteRef = 4F972D6B296F13C6003A0703 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F972D6E296F13C6003A0703 /* iCalKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = iCalKit.framework;
+			remoteRef = 4F972D6D296F13C6003A0703 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F972D70296F13C6003A0703 /* iCalKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = iCalKit.framework;
+			remoteRef = 4F972D6F296F13C6003A0703 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F972D72296F13C6003A0703 /* iCalKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = iCalKit.framework;
+			remoteRef = 4F972D71296F13C6003A0703 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F972D74296F13C6003A0703 /* iCalKit-iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "iCalKit-iOS Tests.xctest";
+			remoteRef = 4F972D73296F13C6003A0703 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F972D76296F13C6003A0703 /* iCalKit-macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "iCalKit-macOS Tests.xctest";
+			remoteRef = 4F972D75296F13C6003A0703 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F972D78296F13C6003A0703 /* iCalKit-tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "iCalKit-tvOS Tests.xctest";
+			remoteRef = 4F972D77296F13C6003A0703 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4F972D2B296F0A86003A0703 /* Resources */ = {
