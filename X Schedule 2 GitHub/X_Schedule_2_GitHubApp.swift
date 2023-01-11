@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct X_Schedule_2_GitHubApp: App {
+struct XSchedule2_GithubApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(dateShown: 0, typeOfDay: "A Day")
         }
     }
 }
